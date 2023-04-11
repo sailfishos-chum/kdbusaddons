@@ -17,7 +17,7 @@ BuildRequires: opt-kf5-rpm-macros >= %{kf5_version}
 BuildRequires: opt-qt5-qtbase-devel
 BuildRequires: opt-qt5-qttools-devel
 
-Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}
+%{?_opt_qt5:Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}}
 
 %description
 KDBusAddons provides convenience classes on top of QtDBus, as well as an API to
