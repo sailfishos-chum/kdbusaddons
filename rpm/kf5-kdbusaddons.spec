@@ -10,7 +10,7 @@ URL:     https://invent.kde.org/frameworks/kdbusaddons
 
 Source0: %{name}-%{version}.tar.bz2
 
-%{opt_kf5_default_filter}
+%{?opt_kf5_default_filter}
 
 BuildRequires: opt-extra-cmake-modules >= %{kf5_version}
 BuildRequires: opt-kf5-rpm-macros >= %{kf5_version}
